@@ -13,10 +13,6 @@ password=hasabadpassword
 server=dna
 mediaplayer=mpv
 
-
-if [[ $2 == vlc ]]; then
-  mediaplayer=vlc
-fi
 len=${#1}
 if [[ $len -ne 2 && $len -ne 3 ]]; then
   echo "Bad channel number. Enter 1,2,3 as 01,02,03 etc."
