@@ -1,5 +1,6 @@
 #! /bin/bash
 # launch with ./zz.sh <2 or 3 digit channel>
+# you need to have 'jq' json parser installed for this to work
 
 
 #change mediaplayer to 'vlc' if you want to use it instead. server is set to random NA.
