@@ -18,6 +18,6 @@ if [[ $len -ne 2 && $len -ne 3 ]]; then
   echo "Bad channel number. Enter 1,2,3 as 01,02,03 etc."
   exit 1 
 fi
-urlkey=$(curl "http://auth.smoothstreams.tv/hash_api.php?site=$site&username=$username&password=$password" | jq -r .hash)
+urlkey=$(curl "https://auth.smoothstreams.tv/hash_api.php?site=$site&username=$username&password=$password" | jq -r .hash)
 url=rtmp://$server.smoothstreams.tv:3615/$site?wmsAuthSign=$urlkey/ch$1q1.stream
 $mediaplayer $url
